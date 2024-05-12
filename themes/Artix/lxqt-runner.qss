@@ -1,0 +1,141 @@
+/* Panel */
+#panel {
+    color: #eaeaea;
+    background: #323131;
+    border: 1px solid #292929;
+}
+
+/* Buttons */
+QToolButton::menu-indicator {
+    image: none;
+}
+
+#closeButton {
+    color: #eaeaea;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: none;
+    qproperty-icon: url(assets/icons/close.svg);
+    qproperty-iconSize: 16px;
+    padding: 3px;
+}
+
+#actionButton {
+    color: #eaeaea;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: none;
+    qproperty-icon: url(assets/icons/menu.svg);
+    qproperty-iconSize: 16px;
+    padding: 3px;
+}
+
+#closeButton:hover, #actionButton:hover {
+    border-image: url(assets/buttons/button-hover.png);
+}
+
+#closeButton:pressed, #actionButton:pressed {
+    border-image: url(assets/buttons/button-pressed.png);
+}
+
+/* Command Box */
+#commandEd {
+    color: #eaeaea;
+    background: transparent;
+    selection-color: #eaeaea;
+    selection-background-color: #4080bf;
+    border: 3px solid transparent;
+    border-image: url(assets/boxes/entry.png) 4;
+    margin: 2px;
+    padding: 2px;
+    font: normal;
+}
+
+/* Search results list */
+#commandList {
+    background: #2e2e2e;
+    color: #eaeaea;
+    selection-color: #eaeaea;
+    selection-background-color: #4080bf;
+    alternate-background-color: #2e2e2e;
+    border: none;
+}
+
+#commandList::item, #commandList::item:alternate {
+    color: #eaeaea;
+    background: #2e2e2e;
+}
+
+#commandList::item:hover, #commandList::item:selected {
+    color: #eaeaea;
+    background: #4080bf;
+}
+
+/* Menus */
+
+QMenu {
+    color: #eaeaea;
+    background: #2c2c2c;
+    border-top: 1px solid #434341;
+    border-bottom: 1px solid #434341;
+}
+
+QMenu::item {
+    color: #eaeaea;
+    background: transparent;
+    border-left: 1px solid #434341;
+    border-right: 1px solid #434341;
+    border-image: none;
+    padding: 4px 6px;
+    min-width: 120px;
+    font: normal;
+}
+
+QMenu::item:selected {
+    border-image: url(assets/menus/menuitem.png);
+}
+
+QMenu::item:disabled {
+    color: #7f7f7f;
+}
+
+/* Scrollbars */
+
+QScrollBar::add-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:vertical,
+QScrollBar::sub-line:horizontal {
+    color: transparent;
+    background: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    color: #eaeaea;
+    background: transparent;
+    background-image: url(assets/scrollbars/filler-v.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-attachment: fixed;
+    border-top: 8px transparent;
+    border-bottom: 8px transparent;
+    border-left: 0px transparent;
+    border-right: 0px transparent;
+    border-image: url(assets/scrollbars/scrollbar-v.png);
+}
+
+QScrollBar::handle:vertical {
+    background: transparent;
+    border: 1px solid transparent;
+    border-image: url(assets/scrollbars/handle-v.png);
+    min-height: 24px;
+    margin: -1px 4px -1px 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    border-image: url(assets/scrollbars/handle-v-hover.png);
+}
+
+QScrollBar::handle:vertical:pressed {
+    border-image: url(assets/scrollbars/handle-v-active.png);
+}
